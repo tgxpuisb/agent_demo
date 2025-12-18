@@ -6,7 +6,7 @@ import { lastAssistantMessageIsCompleteWithToolCalls, DefaultChatTransport, type
 import type { WeatherAgentUIMessage } from '@/agent/weather-agent';
 import WeatherView from '@/component/weather-view';
 import { Button } from '@/component/button';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef } from 'react';
 import cases from '@/component/mockData/cases';
 
 class MockChatTransport extends DefaultChatTransport<UIMessage> {
@@ -35,9 +35,18 @@ class MockChatTransport extends DefaultChatTransport<UIMessage> {
 export default function Chat() {
 
   const [caseName, setCaseName] = useState<string>('');
+  const caseNameRef = useRef<string>('');
 
+  // 更新ref当caseName改变时
+  caseNameRef.current = caseName;
 
-  const chatTransportSettings = new MockChatTransport('test-id-123', async () => cases.case1.request);
+  // 创建一个能够根据caseName动态获取数据的函数
+  const chatTransportSettings = useMemo(() => {
+    return new MockChatTransport('test-id-123', async () => {
+      const currentCase = caseNameRef.current;
+      return cases[currentCase]?.request;
+    });
+  }, []);
 
   const { status, sendMessage, messages, addToolOutput } = useChat<WeatherAgentUIMessage>({
     id: 'test-id-123',
@@ -70,30 +79,17 @@ export default function Chat() {
         >
           非Agent对话测试
         </Button>
-        {/* <Button 
+        <Button 
           variant="secondary" 
-          onClick={() => sendMessage({ text: "上海今天天气怎么样？" })}
+          onClick={() => {
+            setCaseName('case2');
+            sendMessage({
+              text: "Please insert the following provision after the third bullet point in the \"Free copyright notice: cover\" section: \"Upon purchase of this template, you are granted full rights to edit, redistribute, or resell the modified version”. and polish “Copyright notice” section"
+            })
+          }}
         >
-          测试按钮 2 - 上海天气
+          Agent对话测试
         </Button>
-        <Button 
-          variant="outline" 
-          onClick={() => sendMessage({ text: "告诉我深圳的天气情况" })}
-        >
-          测试按钮 3 - 深圳天气
-        </Button>
-        <Button 
-          variant="ghost" 
-          onClick={() => sendMessage({ text: "广州天气" })}
-        >
-          测试按钮 4 - 广州天气
-        </Button>
-        <Button 
-          variant="destructive" 
-          onClick={() => sendMessage({ text: "测试错误输入" })}
-        >
-          测试按钮 5 - 错误输入
-        </Button> */}
       </div>
       <div className='flex justify-center'>
         <div className="w-1/2 px-4">
@@ -111,10 +107,6 @@ export default function Chat() {
                         <hr className="my-2 border-gray-300" />
                       </div>
                     ) : null;
-
-                  case 'tool-weather': {
-                    return <WeatherView invocation={part} />;
-                  }
                 }
               })}
               <br />
