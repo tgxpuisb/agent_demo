@@ -51,7 +51,7 @@ export default function Chat() {
   const { status, sendMessage, messages, addToolOutput } = useChat<WeatherAgentUIMessage>({
     id: 'test-id-123',
     transport: chatTransportSettings,
-    // sendAutomaticallyWhen: lastAssistantMessageIsCompleteWithToolCalls,
+    sendAutomaticallyWhen: () => false,
     async onToolCall(options) {
       console.log("🚀 ~ Chat ~ options:", options)
       // addToolOutput({
