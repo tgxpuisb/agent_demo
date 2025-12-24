@@ -1,5 +1,7 @@
 import { UIToolInvocation, tool } from 'ai';
 import { z } from 'zod';
+import { streamText } from 'ai';
+
 import { getDocument } from '@/tool/document-store';
 import { saveReadDocumentResponse, getReadDocumentResponse } from '@/tool/read-document-response';
 import { learnSkillsTool } from '@/tool/learn-skills';
