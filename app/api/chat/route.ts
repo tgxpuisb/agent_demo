@@ -52,6 +52,8 @@ export async function POST(request: Request) {
               type: 'text',
               text: `
   You MUST call readDocumentTool FIRST.
+  After readDocumentTool returns parsed content, you MUST call learnSkillsTool immediately after this tool.
+  After learnSkillsTool returns edit plan, you MUST call editDocumentTool immediately after this tool.
 
   When calling readDocumentTool:
   - Use requestId: ${requestId}
@@ -92,8 +94,8 @@ export async function POST(request: Request) {
       messages: validatedMessages as any, // FIX: bypass type issue with UIMessage generic
     });
 
-    const toolValue = (agentResponse as any)?.toolInvocations?.[0]?.output?.value;
-    console.log('AAAAA toolValue', toolValue);
+    // const toolValue = (agentResponse as any)?.toolInvocations?.[0]?.output?.value;
+    // console.log('AAAAA toolValue', toolValue);
 
 
     // console.log('AAAAA agentResponse', agentResponse);

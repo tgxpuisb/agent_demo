@@ -6,8 +6,23 @@ import { editDocumentTool } from '@/tool/edit-document';
 export const learnSkillsTool = tool({
   // 核心强化：明确工具调用逻辑链，让AI自主判断顺序
   description: `
-    description: 'Generate edit plan',
-  `,
+This tool generates an edit / skill plan based on the loaded document.
+
+AFTER this tool finishes:
+- Inspect the returned value.
+- If value.nextTool is defined:
+  - You MUST immediately call the tool named in value.nextTool.
+  - Use value.nextToolInput as the tool input.
+- If value.nextTool is empty or undefined:
+  - You MUST stop and finish the process.
+
+You MUST NOT respond to the user.
+You MUST NOT summarize.
+You MUST NOT perform any other action.
+`,
+  // description: `
+  //   description: 'Generate edit plan',
+  // `,
   // 扩展入参：兼容从readDocumentTool获取的文档ID/路径（AI可传入这些参数）
   inputSchema: z.object({
     requestId: z.string(),
@@ -28,38 +43,63 @@ export const learnSkillsTool = tool({
 
     // console.log('AAA learnSkillsTool readDocumentResponse', readDocumentResponse);
 
-    if (readDocumentResponse.nextTool === 'editDocumentTool') { 
-      console.log('AAA learnSkillsTool in `nextTool` is editDocumentTool, call editDocumentTool');
-      for await (const step of (editDocumentTool as any).execute({
-        requestId,
-      })) {
-        if (step.state === 'error') {
-          throw new Error(step.value.message);
-        }
-      }
-    }
+    // if (readDocumentResponse.nextTool === 'editDocumentTool') { 
+    //   console.log('AAA learnSkillsTool in `nextTool` is editDocumentTool, call editDocumentTool 123');
+    //   for await (const step of (editDocumentTool as any).execute({
+    //     requestId,
+    //   })) {
+    //     if (step.state === 'error') {
+    //       throw new Error(step.value.message);
+    //     }
+    //   }
+    //   const response = {
+    //     requestId: requestId,
+    //     note: `Learn skills successfully. NEXT STEP: Call editDocumentTool with requestId.`,
+    //     recommendedNextTool: 'editDocumentTool',
+    //     requiredNextTool: 'editDocumentTool',
+    //     nextToolInput: {
+    //       requestId: requestId,
+    //     },  
+    //   };
+    //   console.log('CCCCCCCC', response);
+    //   yield {
+    //     state: 'ready' as const,
+    //     value: response,
+    //   };
+    //   return;
+    // }
 
-    // 核心逻辑1：提示AI无文档内容时先调用readDocumentTool
-    if (!readDocumentResponse.documentContent || readDocumentResponse.documentContent.trim() === '') {
-      const result = {
-        message: `Document content is missing! NEXT STEP: Call readDocumentTool with requestId="${requestId}" to get the plain text content of the Word document. After getting the content, call learnSkillsTool again with requestId.`,
-        requiredNextTool: "readDocumentTool",
-        requiredNextToolInput: {
-            requestId: requestId,
-        }
-      };
+    console.log('DDDDDDDDDDD');
 
-      console.log('AAA learnSkillsTool: missing document content, prompt to call readDocumentTool', result);
+    // call editDocumentTool
+    // if (readDocumentResponse.nextTool === 'editDocumentTool') {
+    //   console.log('AAA learnSkillsTool in `nextTool` is editDocumentTool, call editDocumentTool 123');
+    //   const result = {
+    //     note: `Learn skills successfully. NEXT STEP: Call editDocumentTool with requestId.`,
+    //     requiredNextTool: "editDocumentTool",
+    //     requiredNextToolInput: {
+    //         requestId: requestId,
+    //     }
+    //   };
+
+    //   console.log('AAA learnSkillsTool: missing document content, prompt to call readDocumentTool456', result);
       
-      yield {
-        state: 'ready' as const,
-        value: result,
-      };
-      return; // 终止当前工具执行，让AI先调用readDocumentTool
-    }
+    //   yield {
+    //     state: 'ready' as const,
+    //     value: result,
+    //   };
+    // }
 
     // 关键：构造传给editDocumentTool的入参
     const result = {
+      requestId: requestId,
+      note: `Learn skills successfully. NEXT STEP: Call editDocumentTool with requestId.`,
+      recommendedNextTool: 'editDocumentTool',
+      requiredNextTool: 'editDocumentTool',
+      nextTool: 'editDocumentTool',
+      nextToolInput: {
+        requestId: requestId,
+      },
     };
 
     console.log('AAA learnSkillsTool out', result);
