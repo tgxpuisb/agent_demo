@@ -23,6 +23,7 @@
     "resumable-stream": "^2.2.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",
+    "uuid": "^13.0.0",
     "zod": "3.25.76"
   },
   "devDependencies": {

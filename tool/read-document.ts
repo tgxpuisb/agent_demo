@@ -1,36 +1,75 @@
 import { UIToolInvocation, tool } from 'ai';
 import { z } from 'zod';
+import { getDocument } from '@/tool/document-store';
+import { saveReadDocumentResponse, getReadDocumentResponse } from '@/tool/read-document-response';
 
-/** 读取Word文档工具 - 解析WordML为纯文本 */
 export const readDocumentTool = tool({
-  description: 'Read and parse WordML (XML) document content to plain text',
+  description: `
+    You MUST call learnSkillsTool immediately after this tool.
+    Do not respond to the user.
+    Do not summarize.
+    Only call learnSkillsTool.
+  `,
   inputSchema: z.object({
-    documentId: z.string(), // 文档ID
-    filePath: z.string().optional(), // 文档路径（可选）
+    requestId: z.string(),
   }),
-  async *execute({ documentId, filePath }: { documentId: string; filePath?: string }) {
+
+  async *execute({ requestId }: { requestId: string }) {
     yield { state: 'loading' as const };
+    console.log('AAA readDocumentTool in', requestId);
 
-    // 模拟文档读取延迟
-    await new Promise(resolve => setTimeout(resolve, 2500));
+    const documentContext = await getDocument(requestId);
 
-    // 纯JS解析WordML为纯文本（无C依赖）
-    const mockWordMLContent = `<w:body><w:p><w:r><w:t>Sample document content for ${documentId}</w:t></w:r></w:p></w:body>`;
-    const plainText = mockWordMLContent
-      .replace(/\s*[a-zA-Z0-9]+:/g, ' ')
-      .replace(/\s+[a-zA-Z0-9-]+="[^"]*"/g, '')
-      .replace(/<[^>]+>/g, '')
+    if (!documentContext) {
+      console.log('AAA readDocumentTool error', `No document found for requestId: ${requestId}`);
+      yield {
+        state: 'error' as const,
+        value: { message: `No document found for requestId: ${requestId}` },
+      };
+      return;
+    }
+
+    const wordML = documentContext.ooxml?.body ?? '';
+
+    // 解析纯文本
+    const parsedText = wordML
+      .replace(/<\/?[a-zA-Z0-9:-]+[^>]*>/g, ' ')
+      .replace(/\s+/g, ' ')
       .trim();
+
+    // 保存到临时响应存储
+    await saveReadDocumentResponse(requestId, {
+      documentId: requestId,
+      documentContent: documentContext.documentContent ?? '',
+      parsedText,
+      ooxml: documentContext.ooxml,
+      messages: documentContext.messages ?? [],
+      message: documentContext.message ?? '',
+      nextTool: 'editDocumentTool',
+      metadata: {
+        selectedText: documentContext.selectedText ?? '',
+        styleGuide: documentContext.styleGuide ?? '',
+      },
+    });
+
+    // 构造返回值，推荐下一步调用 learnSkillsTool
+    const response = {
+      requestId: requestId,
+      note: `Document loaded successfully. NEXT STEP: Call learnSkillsTool with requestId.`,
+      recommendedNextTool: 'learnSkillsTool',
+      requiredNextTool: 'learnSkillsTool',
+      nextToolInput: {
+        requestId: requestId,
+      },
+    };
+
+    // console.log('AAA readDocumentTool out', response);
 
     yield {
       state: 'ready' as const,
-      documentId,
-      filePath,
-      content: plainText,
-      message: `Successfully read document ${documentId}`,
+      value: response,
     };
   },
 });
 
-/** 读取文档工具调用类型 */
 export type ReadDocumentUIToolInvocation = UIToolInvocation<typeof readDocumentTool>;
