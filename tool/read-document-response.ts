@@ -9,6 +9,8 @@ export type ReadDocumentResponse = {
   metadata: {
     selectedText: string;
     styleGuide: string;
+    relevantParagraphs: string[];
+    usedPIdxs: number[];
   };
 };
 
