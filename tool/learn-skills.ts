@@ -27,7 +27,9 @@ You MUST:
     // ⚠️ 关键点：这里什么都不“算”
     // 只是把真实文档上下文交给模型
     yield {
-      state: 'ready' as const,
+      status: 'success' as const,
+      content: `Generated edit instructions`,
+      state: 'success' as const,
       value: {
 instruction: `
 Generate edit instructions as JSON.

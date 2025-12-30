@@ -31,7 +31,11 @@ Pure executor.
 
   async *execute({ des, edits, requestId }) {
     console.log('AAA editDocumentTool in', requestId);
-    yield { state: 'loading' as const };
+    yield {
+      status: 'loading' as const,
+      content: `Applying ${edits.length} edits`,
+      state: 'loading' as const,
+    };
 
     const ctx = await getReadDocumentResponse(requestId);
 
@@ -61,7 +65,9 @@ Pure executor.
     const modifiedOoxml = originalXml; // placeholder
 
     yield {
-      state: 'ready' as const,
+      status: 'success' as const,
+      content: `Applied ${edits.length} edits`,
+      state: 'success' as const,
       value: {
         status: 'success',
         description: des,

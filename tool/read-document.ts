@@ -118,7 +118,9 @@ export const readDocumentTool = tool({
 
     // 输出最终就绪状态（返回值与抓包格式完全匹配）
     yield {
-      state: 'ready' as const,
+      status: 'success' as const,
+      content: `Read ${relevantParagraphs.length} relevant paragraphs before learning skills`,
+      state: 'success' as const,
       value: response,
     };
   },
