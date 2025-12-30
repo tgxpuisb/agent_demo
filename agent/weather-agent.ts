@@ -20,16 +20,21 @@ You MUST follow this loop strictly:
 1. Call readDocumentTool
 2. Call learnSkillsTool
 3. Call editDocumentTool
-4. Inspect the result of editDocumentTool:
-   - If the document still needs changes → generate ANOTHER editDocumentTool call
-   - If the document is correct → finish
+4. END immediately after editDocumentTool completes.
 
 Rules:
-- Only YOU (the agent) decide whether another edit is needed.
+- You MUST call each tool AT MOST ONCE.
+- After editDocumentTool, you MUST NOT perform any further reasoning,
+  inspection, validation, or additional edits.
+- You MUST NOT call editDocumentTool more than once.
 - Tools NEVER call each other.
 - editDocumentTool is a pure executor.
 - You MUST generate tool calls as structured JSON.
 - You MUST stream tool-input-delta when generating edits.
+
+Do NOT loop.
+Do NOT self-correct.
+Do NOT attempt a second edit.
 `,
 
   tools: {
@@ -38,7 +43,7 @@ Rules:
     editDocument: editDocumentTool,
   },
 
-  stopWhen: stepCountIs(15),
+  stopWhen: stepCountIs(10),
 });
 
 export type WeatherAgentUIMessage = InferAgentUIMessage<typeof weatherAgent>;

@@ -6,7 +6,7 @@ const EditSchema = z.object({
   des: z.string(),
   edits: z.array(
     z.object({
-      t: z.literal('p'),
+      t: z.literal('paragraph'),
       v: z.object({
         i: z.number(),
         o: z.enum(['replace', 'before', 'after', 'delete']),
