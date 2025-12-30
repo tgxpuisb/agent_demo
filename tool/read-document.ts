@@ -114,7 +114,7 @@ export const readDocumentTool = tool({
       },
     };
 
-    console.log('AAA readDocumentTool out', `Returned ${relevantParagraphs.length} relevant paragraphs`, response);
+    console.log('AAA readDocumentTool out', `Returned ${relevantParagraphs.length}`);
 
     // 输出最终就绪状态（返回值与抓包格式完全匹配）
     yield {

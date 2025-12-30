@@ -48,19 +48,22 @@ export default function Chat() {
     });
   }, []);
 
-  const { status, sendMessage, messages, addToolOutput } = useChat<WeatherAgentUIMessage>({
+  const { status, sendMessage, messages, addToolResult } = useChat<WeatherAgentUIMessage>({
     id: 'test-id-123',
     transport: chatTransportSettings,
     sendAutomaticallyWhen: () => false,
-    async onToolCall(options) {
-      console.log("🚀 ~ Chat ~ options:", options)
-      // addToolOutput({
-      //   tool: options.toolCall.tool,
-      //   toolCallId: options.toolCallId,
-      //   output: {
-      //     state: 'loading',
-      //   },
-      // })
+    async onToolCall({ toolCall }) {
+
+      addToolResult({
+        tool: toolCall.toolName,
+        toolCallId: toolCall.toolCallId,
+        output: {
+          state: 'ready',
+          value: {
+            message: 'Tool call successful',
+          },
+        },
+      })
     }
   });
 

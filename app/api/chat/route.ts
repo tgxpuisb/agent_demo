@@ -1,9 +1,7 @@
 import { weatherAgent } from '@/agent/weather-agent';
-import { validateUIMessages, UIMessage, InferUITools, streamText } from 'ai';
+import { validateUIMessages} from 'ai';
 import { v4 as uuidv4 } from 'uuid';
 import { saveDocument } from '@/tool/document-store';
-import { google } from '@ai-sdk/google';
-import { generateText } from 'ai';
 
 // escape special chars
 const escapeSpecialChars = (str: string) => {
@@ -68,56 +66,22 @@ const parseDocumentContent = (documentContent: string): ParsedDocument => {
   return result;
 };
 
-// ------------------------------
-// 新增：调用 AI 筛选相关段落索引（返回 pIdxs 嵌套数组格式）
-// ------------------------------
-const getRelevantParagraphIdxs = async (
-  parsedDoc: ParsedDocument,
-  userMessage: string
-): Promise<string> => {
-  if (!parsedDoc.paragraphs.length || !userMessage) {
-    console.log('❌ 无段落/无用户需求，返回空字符串');
-    return ''; // 无段落/无用户需求，返回空数组
-  }
+// function corsHeaders(origin: string | null) {
+//   return {
+//     "Access-Control-Allow-Origin":  origin || '*',
+//     "Access-Control-Allow-Credentials": "true",
+//     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+//     "Access-Control-Allow-Headers": "Content-Type, Authorization",
+//   };
+// }
 
-  // 构造专属 Prompt：要求 AI 返回嵌套数组格式的段落索引
-  const prompt = `
-你需要根据用户需求，从以下文档段落中筛选出**相关的段落索引**，并严格按照要求返回结果：
-
-### 文档信息
-- 总段落数：${parsedDoc.totalParagraphs}
-- 可用段落索引（已排序）：${parsedDoc.paragraphs.map(p => p.index).join(', ')}
-
-### 段落内容预览（索引+核心内容）
-${parsedDoc.paragraphs.map(p => `p${p.index}: ${p.content.substring(0, 100)}${p.content.length > 100 ? '...' : ''}`).join('\n')}
-
-### 用户需求
-${userMessage}
-
-### 返回要求（必须严格遵守，否则会报错）
-1.  仅返回段落索引的**嵌套数组**，无需任何额外解释、文字描述。
-2.  索引必须是文档中存在的非负整数，不得超出总段落数范围。
-3.  相关段落可分组用子数组包裹（如 [0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21]），无关段落不纳入。
-4.  若无相关段落，返回空数组 []。
-
-### 正确返回示例
-[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21]
-`;
-
-  try {
-    // 调用Gemini API获取结果
-    const aiResponse = await generateText({
-      model: google('gemini-2.5-pro'),
-      prompt: prompt,
-    });
-    console.log('AAAAA aiResponse', aiResponse);
-
-    return "[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21]";
-  } catch (error) {
-    console.error('❌ AI 筛选段落索引失败：', error);
-    return '';
-  }
-};
+// export async function OPTIONS(request: Request) {
+//   const origin = request.headers.get("origin");
+//   return new Response(null, {
+//     status: 200,
+//     headers: corsHeaders(origin),
+//   });
+// }
 
 export async function POST(request: Request) {
   try {
@@ -128,9 +92,33 @@ export async function POST(request: Request) {
       documentContext = {},
       selectedContext = {},
       enabledTools = { webSearch: false, isAgentMode: true },
-      message = '',
       messages = [], // 用户编辑指令
     } = body;
+
+    // get the last message
+    if (messages.length <= 0) { 
+      return new Response(
+        JSON.stringify({
+          code: 400,
+          message: 'No messages',
+        }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+    const lastMessage = messages[messages.length - 1];
+    const lastParts = lastMessage?.parts || [];
+    if (lastParts.length <= 0) { 
+      return new Response(
+        JSON.stringify({
+          code: 400,
+          message: 'No parts',
+        }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+    const lastPart = lastParts[lastParts.length - 1];
+    const message = lastPart?.text || '';
+    console.log('✅ 获取用户编辑指令：', message);
 
     // 提取文档原始内容（从 documentContext 中获取）
     const rawDocumentContent = documentContext.documentContent || '';
@@ -145,8 +133,8 @@ export async function POST(request: Request) {
     // ------------------------------
     // 新增步骤 2：调用 AI 筛选相关段落索引（pIdxs）
     // ------------------------------
-    const pIdxs = await getRelevantParagraphIdxs(parsedDoc, message);
-    console.log(`✅ AI 筛选完成，相关段落索引：`, pIdxs);
+    // const pIdxs = await getRelevantParagraphIdxs(parsedDoc, message);
+    // console.log(`✅ AI 筛选完成，相关段落索引：`, pIdxs);
 
     // 2. 生成临时请求ID（仅用于工具调用时关联当前请求的文档，无存储）
     const requestId = uuidv4();
@@ -156,7 +144,7 @@ export async function POST(request: Request) {
       ...documentContext,
       message: message,
       parsedDocument: parsedDoc, // 存入解析后的结构化文档
-      pIdxs: pIdxs // 存入 AI 筛选的段落索引
+      pIdxs: [0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21] // 存入 AI 筛选的段落索引
     });
 
     // 3. 构造Agent消息（仅传指令+请求ID+筛选后的 pIdxs，不传完整文档内容）
@@ -168,15 +156,38 @@ export async function POST(request: Request) {
           {
             type: 'text',
             text: `
-You MUST call readDocumentTool FIRST.
-After readDocumentTool returns parsed content, you MUST call learnSkillsTool immediately after this tool.
-After learnSkillsTool returns edit plan, you MUST call editDocumentTool immediately after this tool.
+              You are a document-editing agent.
 
-When calling readDocumentTool:
-- Use requestId: ${requestId}
-- Use pIdxs: ${JSON.stringify(pIdxs)} (this is the relevant paragraph indexes filtered by user demand)
-- Do NOT ask the user for document content
-            `.trim(),
+              You MUST follow this process strictly:
+
+              Step 0: Determine relevant paragraph indexes (pIdxs).
+              - You have access to:
+                - the user's instruction: ${message}, and
+                - the document content :${documentContext.documentContent}.
+              - Based on BOTH, you MUST determine which paragraph indexes
+                are relevant to the user's request.
+              - pIdxs MUST be an array of 0-based paragraph indexes.
+              - Only include paragraphs that are relevant to the user's instruction.
+              - If no paragraph is relevant, use an empty array [].
+
+              Step 1: Call readDocumentTool.
+              - Use requestId: ${requestId}
+              - Pass the pIdxs you determined in Step 0.
+              - Do NOT ask the user for document content.
+
+              Step 2: After readDocumentTool returns,
+                      you MUST call learnSkillsTool immediately.
+              - You MUST include the SAME pIdxs.
+
+              Step 3: After learnSkillsTool returns,
+                      you MUST call editDocumentTool immediately.
+              - You MUST include the SAME pIdxs.
+
+              Rules:
+              - Always reuse the same requestId.
+              - You MUST NOT skip any step.
+              - You MUST NOT change pIdxs after Step 0.
+              `.trim(),
           },
         ],
       },
@@ -219,61 +230,3 @@ When calling readDocumentTool:
     );
   }
 }
-
-// ------------------------------
-// 保留：原 readDocumentTool 可直接读取保存的 pIdxs
-// ------------------------------
-export const readDocumentTool = {
-  name: 'readDocumentTool',
-  description: 'Read full document content from the current request (no external storage)',
-  parameters: {
-    type: 'object',
-    properties: {
-      requestId: { 
-        type: 'string', 
-        description: 'Unique ID of the current request (to associate document data)' 
-      },
-      pIdxs: {
-        type: 'array',
-        description: 'Nested array of relevant paragraph indexes',
-        items: {
-          type: ['number', 'array']
-        }
-      }
-    },
-    required: ['requestId'],
-  },
-  // 执行函数：ctx 包含 agent.respond 传入的 toolContext
-  execute: async (params: { requestId: string; pIdxs?: (number | (number | any[])[])[] }, ctx: { toolContext: any }) => {
-    try {
-      // 1. 校验requestId（确保工具调用和当前请求匹配）
-      if (params.requestId !== ctx.toolContext.requestId) {
-        throw new Error(`Invalid requestId: ${params.requestId} (expected: ${ctx.toolContext.requestId})`);
-      }
-
-      // 2. 直接从 toolContext 读取文档和筛选后的 pIdxs
-      const documentContext = ctx.toolContext.parsedDoc;
-      const pIdxs = params.pIdxs || ctx.toolContext.pIdxs || [];
-
-      // 3. 返回结构化的文档内容+筛选索引（供Agent后续使用）
-      return {
-        success: true,
-        data: {
-          requestId: params.requestId,
-          pIdxs: pIdxs,
-          documentContent: documentContext.rawContent,
-          styleGuide: escapeSpecialChars(ctx.toolContext?.styleGuide || ''),
-          selectedText: escapeSpecialChars(ctx.toolContext?.selectedText || ''),
-          ooxml: ctx.toolContext?.ooxml || {}, // 已提前清洗
-          // 给Agent的友好提示
-          note: `Full document content loaded (${documentContext.totalParagraphs} paragraphs total) — proceed with editing as per instructions`,
-        },
-      };
-    } catch (error) {
-      return {
-        success: false,
-        error: `Failed to read document: ${(error as Error).message}`,
-      };
-    }
-  },
-};
