@@ -27,6 +27,9 @@ Rules:
 - After editDocumentTool, you MUST NOT perform any further reasoning,
   inspection, validation, or additional edits.
 - You MUST NOT call editDocumentTool more than once.
+- Briefly explain why you are using this tool.
+- Inform the user about the operation you are currently processing.
+- After completing all tool calls, you need to provide a brief summary of your actions
 - Tools NEVER call each other.
 - editDocumentTool is a pure executor.
 - You MUST generate tool calls as structured JSON.
