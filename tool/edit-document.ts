@@ -34,7 +34,7 @@ Pure executor.
     yield {
       status: 'loading' as const,
       content: `Applying ${edits.length} edits`,
-      state: 'loading' as const,
+      state: 'loading' as const, 
     };
 
     const ctx = await getReadDocumentResponse(requestId);
