@@ -1,0 +1,194 @@
+data: {"type":"start"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"I'll help you insert the new"}
+
+data: {"type":"text-delta","id":"0","delta":" provision an"}
+
+data: {"type":"text-delta","id":"0","delta":"d polish the \""}
+
+data: {"type":"text-delta","id":"0","delta":"Copyright notice\" section. Let me start"}
+
+data: {"type":"text-delta","id":"0","delta":" by reading"}
+
+data: {"type":"text-delta","id":"0","delta":" the"}
+
+data: {"type":"text-delta","id":"0","delta":" relevant"}
+
+data: {"type":"text-delta","id":"0","delta":" sections to understand the current formatting"}
+
+data: {"type":"text-delta","id":"0","delta":"."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"tool-input-start","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","toolName":"readDocument"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":"{\"pI"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":"dxs\": [[0,"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":"9],[10,"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":"19]"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","inputTextDelta":"]}"}
+
+data: {"type":"tool-input-available","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","toolName":"readDocument","input":{"pIdxs":[[0,9],[10,19]]}}
+
+data: {"type":"tool-output-available","toolCallId":"toolu_01M6bAZvi1tgrQeKQNTcnRcy","output":{"content":"Read 20 relevant paragraphs","status":"success","data":{"paragraphs":["<w:p    ><w:pPr><w:pStyle w:val=\"DocumentName\"/><w:outlineLvl w:val=\"1\"/></w:pPr><w:r><w:t>Free copyright notice: cover</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>1.</w:t></w:r><w:r><w:tab/><w:t>This template legal document was produced and published by Docular Limited.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>2.</w:t></w:r><w:r><w:tab/><w:t>We control the copyright in this template, and you may only use this template in accordance with the licensing provisions in our terms and conditions. Those licensing provisions include an obligation to retain the attribution / credit incorporated into the template.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>3.</w:t></w:r><w:r><w:tab/><w:t>Buy a licence to use this template without the attribution / credit here:</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:hyperlink r:id=\"rId7\" w:history=\"1\"><w:r><w:rPr><w:color w:val=\"0000FF\"/><w:u w:val=\"single\"/></w:rPr><w:t>https://www.website-contracts.co.uk/copyright-notice.html</w:t></w:r></w:hyperlink></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>4.</w:t></w:r><w:r><w:tab/><w:t>You will need to edit this template before use. Guidance notes to help you do so are set out at the end of the template. During the editing process, you should delete those guidance notes and this cover sheet. Square brackets in the body of the document indicate areas that require editorial attention. \"ORs\" in the body of the document indicate alternative provisions. By the end of the editing process, there should be no square brackets left in the body of the document, and only one alternative from each set of alternatives should remain. Elements may be specified as optional in the accompanying notes, but that does not mean that they are in all cases removable. Nor are they always retainable. Depending upon the circumstances, the inclusion or removal of an optional element may be: (i) required by law; or (ii) necessary to ensure that the document is internally consistent.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>5.</w:t></w:r><w:r><w:tab/><w:t>If you have any doubts about the editing or use of this template, you should seek professional legal advice.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:r><w:t>6.</w:t></w:r><w:r><w:tab/><w:t>Get a quote for the completion of this template here:</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Sch2Number\"/></w:pPr><w:hyperlink r:id=\"rId8\" w:history=\"1\"><w:r><w:rPr><w:color w:val=\"0000FF\"/><w:u w:val=\"single\"/></w:rPr><w:t>https://seqlegal.com/request-quote</w:t></w:r></w:hyperlink></w:p>","<w:p    ><w:r><w:br w:type=\"page\"/></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"DocumentName\"/><w:outlineLvl w:val=\"1\"/></w:pPr><w:r><w:t>Copyright notice</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level1Heading\"/><w:outlineLvl w:val=\"3\"/></w:pPr><w:r><w:t>1.</w:t></w:r><w:r><w:tab/><w:t>Credit</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>1.1</w:t></w:r><w:r><w:tab/><w:t>This document was created using a template from Docular (</w:t></w:r><w:hyperlink r:id=\"rId9\" w:history=\"1\"><w:r ><w:rPr><w:rStyle w:val=\"Hyperlink\"/></w:rPr><w:t>https://seqlegal.com/free-legal-documents/copyright-notice</w:t></w:r></w:hyperlink><w:r><w:t>).</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"BodyText\"/></w:pPr><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>You must retain the above credit. Use of this document without the credit is an infringement of copyright. However, you can purchase from us an equivalent document that does not include the credit.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level1Heading\"/><w:outlineLvl w:val=\"3\"/></w:pPr><w:r><w:t>2.</w:t></w:r><w:r><w:tab/><w:t>Copyright notice</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.1</w:t></w:r><w:r><w:tab/><w:t xml:space=\"preserve\">Copyright (c) </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[year(s) of first publication]</w:t></w:r><w:r><w:t xml:space=\"preserve\"> </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[full name]</w:t></w:r><w:r><w:t>.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.2</w:t></w:r><w:r><w:tab/><w:t>Subject to the express provisions of this notice:</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level3Number\"/></w:pPr><w:r><w:t>(a)</w:t></w:r><w:r><w:tab/><w:t>we, together with our licensors, own and control all the copyright and other intellectual property rights in our website and the material on our website; and</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level3Number\"/></w:pPr><w:r><w:t>(b)</w:t></w:r><w:r><w:tab/><w:t>all the copyright and other intellectual property rights in our website and the material on our website are reserved.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.3</w:t></w:r><w:r><w:tab/><w:t>Our website is protected by national and international laws and treaties, as are all materials on our website. The copying, publication, distribution, renting, lending, performing, displaying or adapting of our website or any material on our website is strictly prohibited unless we have expressly authorised this, whether by means of this notice or otherwise, and subject always to the mandatory requirements of applicable law.</w:t></w:r></w:p>"]}}}
+
+data: {"type":"finish-step"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"Now I'll insert the new provision"}
+
+data: {"type":"text-delta","id":"0","delta":" after"}
+
+data: {"type":"text-delta","id":"0","delta":" bullet"}
+
+data: {"type":"text-delta","id":"0","delta":" point"}
+
+data: {"type":"text-delta","id":"0","delta":" 3"}
+
+data: {"type":"text-delta","id":"0","delta":" "}
+
+data: {"type":"text-delta","id":"0","delta":"in"}
+
+data: {"type":"text-delta","id":"0","delta":" the \"Free"}
+
+data: {"type":"text-delta","id":"0","delta":" copyright notice:"}
+
+data: {"type":"text-delta","id":"0","delta":" cover\" section,"}
+
+data: {"type":"text-delta","id":"0","delta":" an"}
+
+data: {"type":"text-delta","id":"0","delta":"d polish"}
+
+data: {"type":"text-delta","id":"0","delta":" the"}
+
+data: {"type":"text-delta","id":"0","delta":" \"Copyright notice\" section by"}
+
+data: {"type":"text-delta","id":"0","delta":" improving"}
+
+data: {"type":"text-delta","id":"0","delta":" clarity"}
+
+data: {"type":"text-delta","id":"0","delta":" and formatting."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"tool-input-start","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","toolName":"editDocument"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"{\"des\": \"In"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"sert new"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":" provis"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ion after"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":" bul"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"let"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":" 3\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":", \"edi"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ts\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":": [{\"t\":\"p"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"aragr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"aph\",\"v\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"{\"i\":3,\"o\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"\"after\",\"xml"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"\":\"<w:p><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"pPr><w:pSt"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"yle w:val"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"='Sch"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"2Number'/"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"/w:pPr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"><w:r><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":":t>3"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"A.<"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"/w:t></w:r><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"w:r><w:tab"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"/><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":":t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":">Upon pu"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"rch"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ase of th"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"is "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"te"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"mplate, y"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ou are gra"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"nted full r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ights to"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":" e"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"dit, redistr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ibute, or"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":" resell "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"th"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"e modifi"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ed vers"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"ion.</w:t><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"/w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"</w:p>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","inputTextDelta":"\"}}]}"}
+
+data: {"type":"tool-input-available","toolCallId":"toolu_01JuohFFBWJ6eyzW8qcPP4ae","toolName":"editDocument","input":{"des":"Insert new provision after bullet 3","edits":[{"t":"paragraph","v":{"i":3,"o":"after","xml":"<w:p><w:pPr><w:pStyle w:val='Sch2Number'/></w:pPr><w:r><w:t>3A.</w:t></w:r><w:r><w:tab/><w:t>Upon purchase of this template, you are granted full rights to edit, redistribute, or resell the modified version.</w:t></w:r></w:p>"}}]}}
+
+data: {"type":"finish-step"}
+
+data: {"type":"finish","messageMetadata":{"chatId":"24d28988-0b0b-465c-afc7-967667d93862","citations":[]}}
+
+data: [DONE]
+

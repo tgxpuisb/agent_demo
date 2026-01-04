@@ -1,0 +1,74 @@
+data: {"type":"start"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"Perfect"}
+
+data: {"type":"text-delta","id":"0","delta":"! I"}
+
+data: {"type":"text-delta","id":"0","delta":"'ve successfully replace"}
+
+data: {"type":"text-delta","id":"0","delta":"d all"}
+
+data: {"type":"text-delta","id":"0","delta":" instances"}
+
+data: {"type":"text-delta","id":"0","delta":" of \""}
+
+data: {"type":"text-delta","id":"0","delta":"Iq"}
+
+data: {"type":"text-delta","id":"0","delta":"i"}
+
+data: {"type":"text-delta","id":"0","delta":"dis"}
+
+data: {"type":"text-delta","id":"0","delta":"\" with \"Irys\" throughout"}
+
+data: {"type":"text-delta","id":"0","delta":" your"}
+
+data: {"type":"text-delta","id":"0","delta":" document. The replac"}
+
+data: {"type":"text-delta","id":"0","delta":"ements covere"}
+
+data: {"type":"text-delta","id":"0","delta":"d:\n\n-"}
+
+data: {"type":"text-delta","id":"0","delta":" **"}
+
+data: {"type":"text-delta","id":"0","delta":"Iqidis** → **"}
+
+data: {"type":"text-delta","id":"0","delta":"Irys**\n- **"}
+
+data: {"type":"text-delta","id":"0","delta":"IQIDIS** → **"}
+
+data: {"type":"text-delta","id":"0","delta":"IRYS**"}
+
+data: {"type":"text-delta","id":"0","delta":" (all"}
+
+data: {"type":"text-delta","id":"0","delta":" caps)\n- **iqi"}
+
+data: {"type":"text-delta","id":"0","delta":"dis** → **irys** ("}
+
+data: {"type":"text-delta","id":"0","delta":"lowercase"}
+
+data: {"type":"text-delta","id":"0","delta":")"}
+
+data: {"type":"text-delta","id":"0","delta":"\n\nAll occ"}
+
+data: {"type":"text-delta","id":"0","delta":"urrences have"}
+
+data: {"type":"text-delta","id":"0","delta":" been update"}
+
+data: {"type":"text-delta","id":"0","delta":"d across"}
+
+data: {"type":"text-delta","id":"0","delta":" the entire Terms"}
+
+data: {"type":"text-delta","id":"0","delta":" of Service document."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"finish-step"}
+
+data: {"type":"finish","messageMetadata":{"chatId":"4d714458-1b00-43f8-be16-902763e21bd5","citations":[]}}
+
+data: [DONE]
+

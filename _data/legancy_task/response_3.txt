@@ -1,0 +1,240 @@
+data: {"type":"start"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"Perfect"}
+
+data: {"type":"text-delta","id":"0","delta":"! I"}
+
+data: {"type":"text-delta","id":"0","delta":"'ve successfully complete"}
+
+data: {"type":"text-delta","id":"0","delta":"d both"}
+
+data: {"type":"text-delta","id":"0","delta":" tasks:\n\n##"}
+
+data: {"type":"text-delta","id":"0","delta":" Changes"}
+
+data: {"type":"text-delta","id":"0","delta":" Made:"}
+
+data: {"type":"text-delta","id":"0","delta":"\n\n1. **"}
+
+data: {"type":"text-delta","id":"0","delta":"Inserte"}
+
+data: {"type":"text-delta","id":"0","delta":"d new provision"}
+
+data: {"type":"text-delta","id":"0","delta":"**:"}
+
+data: {"type":"text-delta","id":"0","delta":" Added point"}
+
+data: {"type":"text-delta","id":"0","delta":" \""}
+
+data: {"type":"text-delta","id":"0","delta":"3"}
+
+data: {"type":"text-delta","id":"0","delta":"A"}
+
+data: {"type":"text-delta","id":"0","delta":"\" after"}
+
+data: {"type":"text-delta","id":"0","delta":" bullet"}
+
+data: {"type":"text-delta","id":"0","delta":" point 3"}
+
+data: {"type":"text-delta","id":"0","delta":" in the \"Free"}
+
+data: {"type":"text-delta","id":"0","delta":" copyright notice:"}
+
+data: {"type":"text-delta","id":"0","delta":" cover\" section with"}
+
+data: {"type":"text-delta","id":"0","delta":" the text"}
+
+data: {"type":"text-delta","id":"0","delta":": \"Upon"}
+
+data: {"type":"text-delta","id":"0","delta":" purchase of this template, you are"}
+
+data: {"type":"text-delta","id":"0","delta":" granted full"}
+
+data: {"type":"text-delta","id":"0","delta":" rights"}
+
+data: {"type":"text-delta","id":"0","delta":" to edit"}
+
+data: {"type":"text-delta","id":"0","delta":", redistribute"}
+
+data: {"type":"text-delta","id":"0","delta":", or"}
+
+data: {"type":"text-delta","id":"0","delta":" res"}
+
+data: {"type":"text-delta","id":"0","delta":"ell the modifie"}
+
+data: {"type":"text-delta","id":"0","delta":"d version"}
+
+data: {"type":"text-delta","id":"0","delta":".\""}
+
+data: {"type":"text-delta","id":"0","delta":"\n\n2. **Pol"}
+
+data: {"type":"text-delta","id":"0","delta":"ished the \""}
+
+data: {"type":"text-delta","id":"0","delta":"Copyright notice\" section**"}
+
+data: {"type":"text-delta","id":"0","delta":" with"}
+
+data: {"type":"text-delta","id":"0","delta":" the"}
+
+data: {"type":"text-delta","id":"0","delta":" following improvements:\n   - Changed \"("}
+
+data: {"type":"text-delta","id":"0","delta":"c"}
+
+data: {"type":"text-delta","id":"0","delta":")\""}
+
+data: {"type":"text-delta","id":"0","delta":" to \""}
+
+data: {"type":"text-delta","id":"0","delta":"©\" symbol"}
+
+data: {"type":"text-delta","id":"0","delta":" for"}
+
+data: {"type":"text-delta","id":"0","delta":" a"}
+
+data: {"type":"text-delta","id":"0","delta":" more"}
+
+data: {"type":"text-delta","id":"0","delta":" professional copyright"}
+
+data: {"type":"text-delta","id":"0","delta":" notation"}
+
+data: {"type":"text-delta","id":"0","delta":"\n   - Adde"}
+
+data: {"type":"text-delta","id":"0","delta":"d \""}
+
+data: {"type":"text-delta","id":"0","delta":"All"}
+
+data: {"type":"text-delta","id":"0","delta":" rights reserved.\""}
+
+data: {"type":"text-delta","id":"0","delta":" to section"}
+
+data: {"type":"text-delta","id":"0","delta":" 2.1"}
+
+data: {"type":"text-delta","id":"0","delta":" for"}
+
+data: {"type":"text-delta","id":"0","delta":" complet"}
+
+data: {"type":"text-delta","id":"0","delta":"eness\n   - Improve"}
+
+data: {"type":"text-delta","id":"0","delta":"d clarity"}
+
+data: {"type":"text-delta","id":"0","delta":" in"}
+
+data: {"type":"text-delta","id":"0","delta":" sections"}
+
+data: {"type":"text-delta","id":"0","delta":" 2.2"}
+
+data: {"type":"text-delta","id":"0","delta":"("}
+
+data: {"type":"text-delta","id":"0","delta":"a) and ("}
+
+data: {"type":"text-delta","id":"0","delta":"b) by changing"}
+
+data: {"type":"text-delta","id":"0","delta":" \"material"}
+
+data: {"type":"text-delta","id":"0","delta":" on our website\" to \"materials publishe"}
+
+data: {"type":"text-delta","id":"0","delta":"d on our website\""}
+
+data: {"type":"text-delta","id":"0","delta":" for"}
+
+data: {"type":"text-delta","id":"0","delta":" better"}
+
+data: {"type":"text-delta","id":"0","delta":" consistency"}
+
+data: {"type":"text-delta","id":"0","delta":"\n   -"}
+
+data: {"type":"text-delta","id":"0","delta":" Removed redun"}
+
+data: {"type":"text-delta","id":"0","delta":"dant article"}
+
+data: {"type":"text-delta","id":"0","delta":" \"the\" in"}
+
+data: {"type":"text-delta","id":"0","delta":" multiple"}
+
+data: {"type":"text-delta","id":"0","delta":" places (\""}
+
+data: {"type":"text-delta","id":"0","delta":"all"}
+
+data: {"type":"text-delta","id":"0","delta":" the"}
+
+data: {"type":"text-delta","id":"0","delta":" copyright\""}
+
+data: {"type":"text-delta","id":"0","delta":" →"}
+
+data: {"type":"text-delta","id":"0","delta":" \"all copyright\")\n   -"}
+
+data: {"type":"text-delta","id":"0","delta":" Reorgan"}
+
+data: {"type":"text-delta","id":"0","delta":"ized section"}
+
+data: {"type":"text-delta","id":"0","delta":" 2.3 for"}
+
+data: {"type":"text-delta","id":"0","delta":" better"}
+
+data: {"type":"text-delta","id":"0","delta":" flow:"}
+
+data: {"type":"text-delta","id":"0","delta":" \"Our website and all materials on our"}
+
+data: {"type":"text-delta","id":"0","delta":" website are protected...\""}
+
+data: {"type":"text-delta","id":"0","delta":" instea"}
+
+data: {"type":"text-delta","id":"0","delta":"d of repe"}
+
+data: {"type":"text-delta","id":"0","delta":"ating \"as"}
+
+data: {"type":"text-delta","id":"0","delta":" are"}
+
+data: {"type":"text-delta","id":"0","delta":" all"}
+
+data: {"type":"text-delta","id":"0","delta":" materials"}
+
+data: {"type":"text-delta","id":"0","delta":"\""}
+
+data: {"type":"text-delta","id":"0","delta":"\n   - Change"}
+
+data: {"type":"text-delta","id":"0","delta":"d \"we"}
+
+data: {"type":"text-delta","id":"0","delta":" have"}
+
+data: {"type":"text-delta","id":"0","delta":" express"}
+
+data: {"type":"text-delta","id":"0","delta":"ly author"}
+
+data: {"type":"text-delta","id":"0","delta":"ised\" to \"express"}
+
+data: {"type":"text-delta","id":"0","delta":"ly authorize"}
+
+data: {"type":"text-delta","id":"0","delta":"d by"}
+
+data: {"type":"text-delta","id":"0","delta":" us\" for more"}
+
+data: {"type":"text-delta","id":"0","delta":" direct"}
+
+data: {"type":"text-delta","id":"0","delta":" language\n\nThe changes"}
+
+data: {"type":"text-delta","id":"0","delta":" maintain the legal"}
+
+data: {"type":"text-delta","id":"0","delta":" accuracy"}
+
+data: {"type":"text-delta","id":"0","delta":" while improving"}
+
+data: {"type":"text-delta","id":"0","delta":" rea"}
+
+data: {"type":"text-delta","id":"0","delta":"dability and professionalism throughout"}
+
+data: {"type":"text-delta","id":"0","delta":" the Copyright"}
+
+data: {"type":"text-delta","id":"0","delta":" notice section."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"finish-step"}
+
+data: {"type":"finish","messageMetadata":{"chatId":"24d28988-0b0b-465c-afc7-967667d93862","citations":[]}}
+
+data: [DONE]
+

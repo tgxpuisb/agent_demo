@@ -1,0 +1,158 @@
+data: {"type":"start"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"I"}
+
+data: {"type":"text-delta","id":"0","delta":"'ll replace"}
+
+data: {"type":"text-delta","id":"0","delta":" all"}
+
+data: {"type":"text-delta","id":"0","delta":" instances"}
+
+data: {"type":"text-delta","id":"0","delta":" of \""}
+
+data: {"type":"text-delta","id":"0","delta":"Iqidis\" with \""}
+
+data: {"type":"text-delta","id":"0","delta":"Ir"}
+
+data: {"type":"text-delta","id":"0","delta":"ys"}
+
+data: {"type":"text-delta","id":"0","delta":"\" throughout"}
+
+data: {"type":"text-delta","id":"0","delta":" the document."}
+
+data: {"type":"text-delta","id":"0","delta":" Let me "}
+
+data: {"type":"text-delta","id":"0","delta":"do this systematically using"}
+
+data: {"type":"text-delta","id":"0","delta":" a"}
+
+data: {"type":"text-delta","id":"0","delta":" query"}
+
+data: {"type":"text-delta","id":"0","delta":"-based edit"}
+
+data: {"type":"text-delta","id":"0","delta":" to"}
+
+data: {"type":"text-delta","id":"0","delta":" ensure all"}
+
+data: {"type":"text-delta","id":"0","delta":" occ"}
+
+data: {"type":"text-delta","id":"0","delta":"urrences are update"}
+
+data: {"type":"text-delta","id":"0","delta":"d."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"tool-input-start","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","toolName":"editDocument"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\"des\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":" \""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"Replace Iqid"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"is with Irys"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":" th"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"roughout\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":", \"edits\": ["}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\"t\":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"paragraph\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":",\"v\":{\"q\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"Iqi"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"dis\",\"occ"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"all\",\"xml\":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"<w:r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":":t>I"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"rys"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"</w:t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"></w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\"}},"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\"t\":\"para"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"gr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"aph\",\"v\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"q\":\"IQIDI"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"S\",\"occ\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\"all\",\"x"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"ml"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\":\"<w:r><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"t>IRYS</w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":":t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"></w:r>\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"}},"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\"t\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"par"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"ag"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"raph\",\"v\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"{\"q\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\"iqid"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"is\",\"occ\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"\"all\",\"x"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"ml\":\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"<w:r><w:t>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"irys</w:t></"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":"w:r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","inputTextDelta":">\"}}]}"}
+
+data: {"type":"tool-input-available","toolCallId":"toolu_011bZep4cuUqLc8wXn4DPucV","toolName":"editDocument","input":{"des":"Replace Iqidis with Irys throughout","edits":[{"t":"paragraph","v":{"q":"Iqidis","xml":"<w:r><w:t>Irys</w:t></w:r>","occ":"all"}},{"t":"paragraph","v":{"q":"IQIDIS","xml":"<w:r><w:t>IRYS</w:t></w:r>","occ":"all"}},{"t":"paragraph","v":{"q":"iqidis","xml":"<w:r><w:t>irys</w:t></w:r>","occ":"all"}}]}}
+
+data: {"type":"finish-step"}
+
+data: {"type":"finish","messageMetadata":{"chatId":"4d714458-1b00-43f8-be16-902763e21bd5","citations":[]}}
+
+data: [DONE]
+

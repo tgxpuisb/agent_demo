@@ -1,0 +1,534 @@
+data: {"type":"start"}
+
+data: {"type":"start-step"}
+
+data: {"type":"text-start","id":"0"}
+
+data: {"type":"text-delta","id":"0","delta":"Great"}
+
+data: {"type":"text-delta","id":"0","delta":"! The"}
+
+data: {"type":"text-delta","id":"0","delta":" provision"}
+
+data: {"type":"text-delta","id":"0","delta":" has been inserte"}
+
+data: {"type":"text-delta","id":"0","delta":"d."}
+
+data: {"type":"text-delta","id":"0","delta":" Now let"}
+
+data: {"type":"text-delta","id":"0","delta":" me polish"}
+
+data: {"type":"text-delta","id":"0","delta":" the \"Copyright notice\" section by improving"}
+
+data: {"type":"text-delta","id":"0","delta":" clarity"}
+
+data: {"type":"text-delta","id":"0","delta":" and rea"}
+
+data: {"type":"text-delta","id":"0","delta":"dability."}
+
+data: {"type":"text-end","id":"0"}
+
+data: {"type":"tool-input-start","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","toolName":"readDocument"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","inputTextDelta":""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","inputTextDelta":"{\"pIdxs\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","inputTextDelta":": [[1"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","inputTextDelta":"5,20"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","inputTextDelta":"]]}"}
+
+data: {"type":"tool-input-available","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","toolName":"readDocument","input":{"pIdxs":[[15,20]]}}
+
+data: {"type":"tool-output-available","toolCallId":"toolu_01DKp2o2uZ1XA8d5U8r5X9bT","output":{"content":"Read 6 relevant paragraphs","status":"success","data":{"paragraphs":["<w:p    ><w:pPr><w:pStyle w:val=\"Level1Heading\"/><w:outlineLvl w:val=\"3\"/></w:pPr><w:r><w:t>2.</w:t></w:r><w:r><w:tab/><w:t>Copyright notice</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.1</w:t></w:r><w:r><w:tab/><w:t xml:space=\"preserve\">Copyright (c) </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[year(s) of first publication]</w:t></w:r><w:r><w:t xml:space=\"preserve\"> </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[full name]</w:t></w:r><w:r><w:t>.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.2</w:t></w:r><w:r><w:tab/><w:t>Subject to the express provisions of this notice:</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level3Number\"/></w:pPr><w:r><w:t>(a)</w:t></w:r><w:r><w:tab/><w:t>we, together with our licensors, own and control all the copyright and other intellectual property rights in our website and the material on our website; and</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level3Number\"/></w:pPr><w:r><w:t>(b)</w:t></w:r><w:r><w:tab/><w:t>all the copyright and other intellectual property rights in our website and the material on our website are reserved.</w:t></w:r></w:p>","<w:p    ><w:pPr><w:pStyle w:val=\"Level2Number\"/></w:pPr><w:r><w:t>2.3</w:t></w:r><w:r><w:tab/><w:t>Our website is protected by national and international laws and treaties, as are all materials on our website. The copying, publication, distribution, renting, lending, performing, displaying or adapting of our website or any material on our website is strictly prohibited unless we have expressly authorised this, whether by means of this notice or otherwise, and subject always to the mandatory requirements of applicable law.</w:t></w:r></w:p>"]}}}
+
+data: {"type":"finish-step"}
+
+data: {"type":"start-step"}
+
+data: {"type":"tool-input-start","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","toolName":"editDocument"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"{\"des\": \""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"Polis"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"h Copy"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"right not"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ice sec"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"tion\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":", \"edits\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":": "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"[{\"t\":\"pa"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ragra"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ph\",\"v\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"{\"i\":16,\"o\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\"replace\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":",\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"xml\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\"<w:p><w:pP"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:pSt"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"yle w:val='"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"Lev"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"el2Number"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"'/"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"></w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":pPr>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:r><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t>2.1</w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t></w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":r><w:r><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"tab/><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:t xml:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"space='pre"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"serve'>C"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"opyright "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"© </w:t>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:r><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:rPr><w:i"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/><w:iCs/>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:rP"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t>[year(s) o"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"f first "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"publicati"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"on]</"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:t></w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:r><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t xml:space"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"='preserve"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"'>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" </"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:t>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r><w:rPr>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:i/><w:iCs"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/></"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:rPr><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t>[full n"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ame]<"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/w:t></w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r><w:r><w:t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":">. All ri"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ghts res"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"erved.</w:t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"></w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":p>\"}},"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"{\"t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\":\"pa"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ragr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"aph\",\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"v\":{\"i\":18"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":",\"o\":\"repla"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ce\",\"xml\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":\"<w:p><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:pPr><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"pSty"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"le w:val='L"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ev"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"el3Number'"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/w:pPr><w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:t>("}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"a)</w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t></w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r><w:r><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":tab/><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":">we, togethe"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r with our l"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"icen"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"sors,"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" own and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"control all "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"copyright"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" and other"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" i"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ntellectu"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"al prop"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"erty righ"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ts in our w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ebsite and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"the"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" m"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"aterials pu"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"blishe"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"d "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"on our we"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"bsite; and<"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/w:t></w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"></w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"p>\"}},{\"t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\":\"paragraph"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\",\"v\":{\"i\":"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"19,\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"o\":\"replace\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":",\"xml\":\"<w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"p><w:pPr><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"pS"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"tyle w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"val"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"='Lev"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"el3Numb"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"er'/></"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:pPr><w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:t>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"(b)"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:t></w:r"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"><w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":r><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:tab/><w:t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":">al"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"l "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"copyright"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"other"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" intellec"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"tual "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"prop"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"erty rights"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" in our we"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"bsit"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"e and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"the material"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"s "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"pub"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"lished on ou"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"website ar"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"e reserved"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":".</w:t><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"/w:r></w:p>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\"}},"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"{\"t\":\"paragr"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ap"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"h\",\"v\":{\"i\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":20,\"o\""}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":\"re"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"place\","}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"\"xml\":\"<w:p>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":pPr>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w:pStyle w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"val='Lev"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"el2"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"Numbe"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r'/></w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"pPr><w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r><"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:t>2.3"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:t></w:r>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"<w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":":r><w:t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ab/><w:t>O"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ur w"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ebsite a"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"nd all mater"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ia"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ls on our we"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"bsite "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"are p"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"rotecte"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"d by"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" national "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"inter"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"nati"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"onal laws"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" and tre"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"aties. The "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"copying"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":", pub"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"lication"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":", distri"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"but"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ion, renti"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ng, lending,"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" perform"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ing, dis"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"playing, o"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"r adapting "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"of our"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" website "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"or any mater"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ial on"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" our web"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"site "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"is strictly "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"prohibit"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ed un"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"less "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ex"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"pressly a"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"utho"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"rized by"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" us t"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"hrough "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"this notice "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"or otherwis"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"e, and "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"subjec"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t a"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"lwa"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ys to the "}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"manda"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"tory requ"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ir"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"ements of ap"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"plicable"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":" law.</w:"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"t>"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"</w:r></"}
+
+data: {"type":"tool-input-delta","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","inputTextDelta":"w:p>\"}}]}"}
+
+data: {"type":"tool-input-available","toolCallId":"toolu_019kDxp44vU7HnEVUAwz8VGJ","toolName":"editDocument","input":{"des":"Polish Copyright notice section","edits":[{"t":"paragraph","v":{"i":16,"o":"replace","xml":"<w:p><w:pPr><w:pStyle w:val='Level2Number'/></w:pPr><w:r><w:t>2.1</w:t></w:r><w:r><w:tab/><w:t xml:space='preserve'>Copyright © </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[year(s) of first publication]</w:t></w:r><w:r><w:t xml:space='preserve'> </w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>[full name]</w:t></w:r><w:r><w:t>. All rights reserved.</w:t></w:r></w:p>"}},{"t":"paragraph","v":{"i":18,"o":"replace","xml":"<w:p><w:pPr><w:pStyle w:val='Level3Number'/></w:pPr><w:r><w:t>(a)</w:t></w:r><w:r><w:tab/><w:t>we, together with our licensors, own and control all copyright and other intellectual property rights in our website and the materials published on our website; and</w:t></w:r></w:p>"}},{"t":"paragraph","v":{"i":19,"o":"replace","xml":"<w:p><w:pPr><w:pStyle w:val='Level3Number'/></w:pPr><w:r><w:t>(b)</w:t></w:r><w:r><w:tab/><w:t>all copyright and other intellectual property rights in our website and the materials published on our website are reserved.</w:t></w:r></w:p>"}},{"t":"paragraph","v":{"i":20,"o":"replace","xml":"<w:p><w:pPr><w:pStyle w:val='Level2Number'/></w:pPr><w:r><w:t>2.3</w:t></w:r><w:r><w:tab/><w:t>Our website and all materials on our website are protected by national and international laws and treaties. The copying, publication, distribution, renting, lending, performing, displaying, or adapting of our website or any material on our website is strictly prohibited unless expressly authorized by us through this notice or otherwise, and subject always to the mandatory requirements of applicable law.</w:t></w:r></w:p>"}}]}}
+
+data: {"type":"finish-step"}
+
+data: {"type":"finish","messageMetadata":{"chatId":"24d28988-0b0b-465c-afc7-967667d93862","citations":[]}}
+
+data: [DONE]
+
